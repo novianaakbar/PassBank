@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.secure.passbank.ActivityUpdate">
+
+    <EditText
+        android:id="@+id/editNoUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:enabled="false"
+        android:hint="No"
+        android:inputType="number"
+        android:maxLength="10">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editEmailUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:hint="Email / Account"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/editNameUpdate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/editNameUpdate"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editPasswordUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20px"
+        android:hint="Password"
+        android:inputType="text"
+        android:layout_below="@+id/editEmailUpdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_alignStart="@+id/editEmailUpdate" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPasswordUpdate"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/ic_done"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnKembaliUpdate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editPasswordUpdate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editPasswordUpdate"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:text="Kembali" />
+
+    <EditText
+        android:id="@+id/editNameUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editNoUpdate"
+        android:layout_below="@+id/editNoUpdate"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignEnd="@+id/editNoUpdate" />
+
+
+</RelativeLayout>

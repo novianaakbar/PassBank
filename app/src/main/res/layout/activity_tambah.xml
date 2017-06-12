@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.secure.passbank.ActivityTambah">
+
+
+    <EditText
+        android:id="@+id/editNameTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editEmailTambah"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:hint="Name"
+        android:inputType="text"
+        android:maxLength="20"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editEmailTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginRight="20px"
+        android:hint="Username"
+        android:layout_above="@+id/editPasswordTambah"
+        android:layout_alignStart="@+id/editNameTambah" />
+
+    <EditText
+        android:id="@+id/editPasswordTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:hint="Password"
+        android:inputType="text"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/btnSimpanTambah"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editPasswordTambah"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/ic_done"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/btnKembaliTambah"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editPasswordTambah"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editPasswordTambah"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:text="Kembali" />
+
+    <EditText
+        android:id="@+id/editNoTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editNameTambah"
+        android:layout_alignStart="@+id/editNameTambah"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="No"
+        android:inputType="textPersonName"
+        android:layout_alignEnd="@+id/editEmailTambah" />
+
+
+</RelativeLayout>

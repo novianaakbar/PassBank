@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.secure.passbank.ActivityLihat">
+
+    <TextView
+        android:id="@+id/txtNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="104dp"
+        android:layout_marginTop="19dp"
+        android:text="TextView"
+        android:layout_marginStart="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/TextView04" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:layout_below="@+id/txtNo"
+        android:layout_alignStart="@+id/txtNo" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPassword"
+        android:layout_alignBottom="@+id/txtPassword"
+        android:layout_alignLeft="@+id/TextView04"
+        android:text="Password"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtEmail"
+        android:layout_alignBottom="@+id/txtEmail"
+        android:layout_alignLeft="@+id/TextView02"
+        android:text="Email / Account"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtName"
+        android:layout_alignBottom="@+id/txtName"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="Name"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:text="Nomor"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/txtNo"
+        android:layout_alignBottom="@+id/txtNo"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnKembali"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView03"
+        android:layout_marginTop="43dp"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:text="Kembali" />
+
+</RelativeLayout>
